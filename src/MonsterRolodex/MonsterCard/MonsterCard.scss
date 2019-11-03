@@ -1,0 +1,31 @@
+.monster {
+    width: 210px;
+    height: 210px;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    background-color: #95dada;
+    border: 1px solid grey;
+    border-radius: 5px;
+  
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+  
+    &-name {
+        position: relative;
+        margin: auto;
+        text-align: center;
+        height: 20px;
+        top: calc(50% - 10px);
+    }
+}
+.monster:hover {
+    transform: scale(1.05);
+}
+
+.search {
+    display: block;
+    width: 300px;
+    position: relative;
+    left: calc(50% - 150px);
+}
